@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navigation {
+
+}
+
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-ul .linkContaier {
+    list-style: none;
+}
+
+.nav-ul .linkContaier a {
+    text-decoration: none;
+}
