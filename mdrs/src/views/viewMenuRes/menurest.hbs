@@ -1,0 +1,61 @@
+<div class="menuContainer">
+    <div class="asideMenu">
+        <div class="menuOptions">
+            <ul class="optContainer">
+                <li class="options">Menú</li>
+                <li class="options">Nuevo Menú</li>
+                <li class="options">Promociones</li>
+            </ul>
+        </div>
+        <p>Menús</p>
+        <div class="menuSelected">
+            <ul class="menus">
+                <li id="menuOption" class="options"> . </li>
+            </ul>
+        </div>
+    </div>
+    <div class="currentMenu">
+        {{!-- <div class="categorias">
+            <div class="addCat">
+                <label for="inCat">
+                    <input type="text" name="" id="">
+                </label>
+                <button>Nueva Categoria</button>
+            </div>
+            <ul class="catContainer">
+                <li class="cat">Bebidas</li>
+                <li class="cat">Entradas</li>
+                <li class="cat">Postres</li>
+            </ul>
+        </div> --}}
+        <div class="productsContainer">
+            <h4 class="productsTitle"> . </h4>
+            <div id="gridProducts" class="gridProducts">
+                
+            </div>
+
+            <form id="productForm">
+                <h5>Agregar Producto</h5>
+                <label for="nameForm">
+                    nombre
+                    <input type="text" name="name" id="nameForm">
+                </label>
+                <label for="descForm">
+                    descripción
+                    <input type="text" name="desc" id="descForm">
+                </label>
+                <label for="priceForm">
+                    precio
+                    <input type="text" name="price" id="proceForm">
+                </label>
+                <div class="addProductButton">
+                    <button id="saveProduct" type="submit" class="addbtn">
+                        Guardar Producto
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/rest/menu.js"></script>

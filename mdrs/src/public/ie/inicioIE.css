@@ -1,0 +1,28 @@
+.restContainer {
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    padding: 20px;
+}
+
+.gridRestaurantes {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.restaurante .img-f {
+    max-width: 88%;
+    height: auto;
+}
+
+.restaurante {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 15px;
+    /* margin: 10px; */
+    height: 180px;
+    border-radius: 5px;
+    align-items: center;
+}

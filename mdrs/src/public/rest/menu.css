@@ -1,0 +1,169 @@
+.menuContainer {
+    display: flex;
+    justify-content: space-evenly;
+    color: navy;
+    width: 100%;
+    height: 85vh;
+}
+
+.asideMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8em;
+    width: 15%;
+}
+
+.menuOptions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: linen;
+    border-radius: 3px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.asideMenu p {
+    color: whitesmoke;
+}
+
+.menuOptions .optContainer {
+    margin: 0;
+    padding: 0;
+}
+
+.menuSelected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: linen;
+    border-radius: 3px;
+    margin-top: 0px;
+}
+
+.menuSelected .menus {
+    margin: 0;
+    padding: 0;
+}
+
+.optContainer .options {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid tomato;
+    cursor: pointer;
+}
+
+.menus .options {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid tomato;
+    cursor: pointer;
+}
+
+/* rigth side */
+.currentMenu {
+    display: flex;
+    width: 65%;
+    padding: 15px;
+    justify-content: space-between;
+    margin-top: 100px;
+    background-color: oldlace;
+}
+
+.categorias {
+    padding-left: 5px;
+    width: 22%;
+    font-size: .9em;
+}
+
+.categorias p {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.catContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px -4px gray;
+}
+
+.catContainer .cat {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 2px solid tomato;
+    width: 100%;
+    cursor: pointer;
+}
+
+.productsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.productsContainer .productsTitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px 0 10px 0;
+}
+
+.productsContainer .gridProducts {
+    display: grid;
+    height: 60%;
+    width: 100%;
+    margin-bottom: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+.gridProducts .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 11px -5px gray;
+    font-size: .8em;
+}
+
+.productTitle, .desc, .price {
+    padding: 5px;
+}
+
+.product .productTitle {
+    text-align: center;
+}
+
+.product .desc {
+    text-align: center;
+}
+
+.product .price {
+    text-align: end;
+}
+
+.gridProducts .productsli {
+    list-style: none;
+}
+
+.productsContainer .addProductButton {
+margin-top: 20px;
+}
+
+form label, form input {
+    font-size: .8em;
+}

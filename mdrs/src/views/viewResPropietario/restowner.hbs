@@ -1,0 +1,19 @@
+<div class="restContainer">
+    <h1>Algo que te agrade?</h1>
+    {{#if products}}
+    <div class="productGrid">
+        {{#each products}}
+        <div class="itemGrid">
+            <h4>{{this.name}}</h4>
+            <p>{{this.desc}}</p>
+            <p>$ {{this.price}}</p>
+        </div>
+        {{/each}}
+    </div>
+    {{else}}
+    <ul class="list-group">
+        <li class="list-group-item">Be first to comment on this post</li>
+    </ul>
+    {{/if}}
+</div>
+<script src="/rest/owner.js"></script>
